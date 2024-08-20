@@ -1,7 +1,6 @@
 package practice.algo;
 
-import practice.algo.polindrome.GetSubsets;
-import practice.algo.polindrome.IsValidPolindrome;
+import practice.algo.polindrome.*;
 
 import java.util.ArrayList;
 
@@ -18,7 +17,7 @@ public class Main {
         System.out.println(IsValidPolindrome.isValidPolindrome("abdcca"));
 
         // Find longest substring polindrom
-        //System.out.println(LongestSubstringPalindrome.longestSubstringPalindrome("babad"));
+        System.out.println(LongestSubstringPolindrome.longestSubstringPolindrome("babad"));
 
         // Check if the string is a rotated polindrom
        // System.out.println(IsRotatedPolindrome.isRotatedPolindrome("aaaad"));

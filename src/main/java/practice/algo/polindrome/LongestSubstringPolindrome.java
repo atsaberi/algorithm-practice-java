@@ -1,7 +1,7 @@
 package practice.algo.polindrome;
 
-public class LongestSubstringPalindrome {
-    public static String longestSubstringPalindrome(String s) {
+public class LongestSubstringPolindrome {
+    public static String longestSubstringPolindrome(String s) {
         if (s == null || s.length() == 0) {
             return "";
         }
