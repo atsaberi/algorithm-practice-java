@@ -1,25 +1,32 @@
 package practice.algo.polindrome;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class GetSubsets {
-    public static ArrayList<ArrayList<Integer>> getSubsets(ArrayList<Integer> set, int index) {
-        ArrayList<ArrayList<Integer>> allsubsets = new ArrayList<>();
+
+    private static final Logger logger = LogManager.getLogger(GetSubsets.class);
+
+    public static List<List<Integer>> getAllSubsets(List<Integer> set, int index) {
+
+        List<List<Integer>> allSubsets = new ArrayList<>();
         if (set.size() == index)
-            allsubsets.add(new ArrayList<>()); // Empty set
-        else
-        {
-            allsubsets = getSubsets(set, index+ 1);
-            int item= set.get(index);
-            ArrayList<ArrayList<Integer>> otherSubsets = new ArrayList<>();
-            for (ArrayList<Integer> subset : allsubsets) {
-                ArrayList<Integer> newSubset = new ArrayList<>();
+            allSubsets.add(new ArrayList<>()); // Empty set
+        else {
+            allSubsets = getAllSubsets(set, index + 1);
+            int item = set.get(index);
+            List<List<Integer>> otherSubsets = new ArrayList<>();
+            for (List<Integer> subset : allSubsets) {
+                List<Integer> newSubset = new ArrayList<>();
                 newSubset.addAll(subset);
                 newSubset.add(item);
                 otherSubsets.add(newSubset);
             }
-            allsubsets.addAll(otherSubsets);
+            allSubsets.addAll(otherSubsets);
         }
-        return allsubsets;
+        return allSubsets;
     }
 }
