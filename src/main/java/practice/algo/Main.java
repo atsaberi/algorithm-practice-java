@@ -1,6 +1,7 @@
 package practice.algo;
 
 import practice.algo.polindrome.GetSubsets;
+import practice.algo.polindrome.IsValidPolindrome;
 
 import java.util.ArrayList;
 
@@ -14,7 +15,7 @@ public class Main {
         //System.out.println(FindLUSlength.findLUSlength("aaa", "bbba"));
 
         // Check for valid Polindrom
-        //System.out.println(ValidPalindrome.validPalindrome("abdcca"));
+        System.out.println(IsValidPolindrome.isValidPolindrome("abdcca"));
 
         // Find longest substring polindrom
         //System.out.println(LongestSubstringPalindrome.longestSubstringPalindrome("babad"));
