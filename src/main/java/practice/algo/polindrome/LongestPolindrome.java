@@ -1,9 +1,8 @@
 package practice.algo.polindrome;
 
 import java.util.HashSet;
-import java.util.List;
 
-public class LongestPlindrome {
+public class LongestPolindrome {
     public static int longestPalindrome(String s) {
         HashSet<Character> hs = new HashSet<>();
         int count = 0;
