@@ -3,7 +3,7 @@ package practice.algo.polindrome;
 import java.util.HashSet;
 
 public class LongestPolindrome {
-    public static int longestPalindrome(String s) {
+    public static int longestPolindrome(String s) {
         HashSet<Character> hs = new HashSet<>();
         int count = 0;
         count = getCharactersCount(s, hs, count);

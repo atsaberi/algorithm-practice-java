@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Longest Polindrome
-        //System.out.println(LongestPlindrome.longestPalindrome("abccccdd"));
+        System.out.println(LongestPolindrome.longestPolindrome("abccccdd"));
 
         // Find LUS Length
         //System.out.println(FindLUSlength.findLUSlength("aaa", "bbba"));
