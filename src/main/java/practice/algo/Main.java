@@ -14,7 +14,7 @@ public class Main {
         //System.out.println(FindLUSlength.findLUSlength("aaa", "bbba"));
 
         // Check for valid Polindrom
-        //System.out.println(ValidParameter.validPalindrome("abdcca"));
+        //System.out.println(ValidPalindrome.validPalindrome("abdcca"));
 
         // Find longest substring polindrom
         //System.out.println(LongestSubstringPalindrome.longestSubstringPalindrome("babad"));
